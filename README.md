@@ -1,6 +1,7 @@
-# html5-css3-project1
+# Layout Sample Project
 
-# Site
+# Site link
+
 Layout supports mobile (up-to-400) and desktop (up-to-1360) versions
 
 # The tech stack is:
