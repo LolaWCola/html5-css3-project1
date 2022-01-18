@@ -1,0 +1,13 @@
+$lg: 400px;
+$sm: 399px;
+@mixin for-big-page {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin for-small-page {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}

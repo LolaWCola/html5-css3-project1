@@ -1,0 +1,123 @@
+.inbox {
+  background-color: $color-light-pink;
+  padding: 50px 15px;
+  @include for-big-page {
+    margin-top: 103px;
+    display: flex;
+    max-width: 1400px;
+    min-height: 790px;
+    width: 100%;
+    padding: 115px 99px 101px 193px;
+  }
+  &__banner {
+    margin: 0;
+    @include for-big-page {
+      margin-top: 27px;
+    }
+  }
+  &__banner-image {
+    max-width: 100%;
+  }
+  &__subtitle {
+    margin: 0;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: $text-color-orange;
+    @include for-big-page {
+      margin-top: 0;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: $color-dark;
+    margin: 0;
+    margin-top: 17px;
+    @include for-big-page {
+      font-size: 56px;
+      letter-spacing: -0.5px;
+      line-height: 56px;
+      margin-top: 24px;
+    }
+  }
+  &__description {
+    margin: 0;
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-dark;
+    margin-top: 18px;
+    @include for-big-page {
+      margin-top: 30px;
+    }
+  }
+  &__details {
+    @include for-big-page {
+      max-width: 519px;
+      margin-left: auto;
+    }
+  }
+  &__caption {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 15px;
+    color: $color-dark;
+    opacity: 0.6;
+    @include for-big-page {
+      display: block;
+    }
+  }
+  &__text {
+    @include for-big-page {
+      margin: 0 30px;
+    }
+  }
+  &__review {
+    margin-top: 30px;
+    @include for-big-page {
+      margin-top: 44px;
+    }
+  }
+}
+
+.review {
+  background-color: $color-white;
+  padding: 30px 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid $color-blue;
+  @include for-big-page {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+  &__image {
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+  }
+  &__user {
+    margin-top: 26px;
+    display: flex;
+  }
+  &__user-name {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+  &__user-title {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+  }
+}

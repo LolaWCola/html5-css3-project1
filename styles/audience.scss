@@ -1,0 +1,148 @@
+.audience {
+  background-color: $color-light-blue;
+  padding: 50px 15px;
+  @include for-big-page {
+    margin: auto;
+    margin-top: 108px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 111px;
+  }
+  &__block-content {
+    display: flex;
+    flex-direction: column;
+    @include for-big-page {
+      max-width: 555px;
+      margin: auto;
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    color: $text-color-dark;
+    @include for-big-page {
+      margin: 0;
+      margin-top: 108px;
+      margin-bottom: 24px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: $text-color-dark;
+    margin: 0;
+    margin-top: 17px;
+    @include for-big-page {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      margin-top: 24px;
+      margin: 0;
+      width: 555px;
+      height: 112px;
+    }
+  }
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-dark;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 0;
+    @include for-big-page {
+      margin-top: 30px;
+      margin-bottom: 0;
+      width: 555px;
+      height: 72px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @include for-big-page {
+      margin-top: 34px;
+      margin: auto;
+      width: 328px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__action-btn {
+    margin-right: 10px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  &__learn-more-btn {
+    margin-top: 12px;
+    width: 100%;
+    color: $color-dark;
+  }
+  &__banners {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-big-page {
+      margin-top: 111px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  }
+  &__banners-user {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 290px;
+    height: 300px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      #ffffff;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: rgba(43, 41, 45, 1);
+    cursor: pointer;
+    @include for-big-page {
+      position: relative;
+      width: 262px;
+      height: 300px;
+      margin-bottom: 110px;
+      margin-top: 0;
+    }
+  }
+  &__banners-user:hover {
+    background: $text-color-blue;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    color: $text-color-white;
+    .audience__banners-text {
+      color: $text-color-white;
+    }
+  }
+  &__banners-photo {
+    padding: 22px 76px;
+    margin: 0;
+  }
+  &__banners-text {
+    margin: 0 20px 33px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color-dark;
+  }
+}

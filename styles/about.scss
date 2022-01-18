@@ -1,0 +1,37 @@
+.about {
+  width: 100%;
+  padding: 46px 15px;
+  background-color: $color-light;
+  @include for-big-page {
+    display: flex;
+    height: 255px;
+    justify-content: space-between;
+    padding: 77px 130px 76px 130px;
+  }
+}
+
+.article {
+  @include for-big-page {
+    width: 555px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: $color-dark;
+    margin: 0;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+}
+
+.article:last-child {
+  margin-top: 20px;
+  @include for-big-page {
+    margin-top: 0;
+  }
+}

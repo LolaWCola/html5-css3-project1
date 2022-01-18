@@ -1,0 +1,90 @@
+.order {
+  padding: 50px 15px;
+  background-color: #f4f5f7;
+  @include for-big-page {
+    width: 100%;
+    padding: 73px 0 72px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__details {
+    @include for-big-page {
+      max-width: 555px;
+    }
+  }
+  &__illustration {
+    max-width: 100%;
+    @include for-big-page {
+      max-width: 269px;
+      margin-right: 121px;
+    }
+  }
+  &__title {
+    letter-spacing: -0.25;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    @include for-big-page {
+      margin-bottom: 0;
+      text-align: start;
+    }
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    @include for-big-page {
+      margin-top: 12px;
+      margin-bottom: 26px;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+    @include for-big-page {
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+  &__email {
+    font-size: 18px;
+    line-height: 13px;
+    background: #ffffff;
+    border: 1px solid $border-color;
+    height: 48px;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 15px;
+    &::placeholder {
+      text-align: center;
+      color: $color-dark;
+      @include for-big-page {
+        padding-left: 15px;
+        text-align: start;
+      }
+    }
+  }
+  &__button {
+    margin-top: 12px;
+    @include for-small-page {
+      width: 100%;
+    }
+    @include for-big-page {
+      margin-top: 0;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+  }
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+  }
+  &__terms-link {
+    color: $text-color-blue;
+  }
+}

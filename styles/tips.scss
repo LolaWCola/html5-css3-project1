@@ -1,0 +1,52 @@
+.tips {
+  margin-top: 8px;
+  @include for-big-page {
+    display: none;
+  }
+}
+
+.tip {
+  padding: 40px 15px 0 15px;
+  border-bottom: 1px solid $color-light-grey;
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: $text-color-green;
+  }
+  &__title {
+    margin: 0;
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: $color-dark;
+  }
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-dark;
+    margin: 0;
+    margin-top: 13px;
+  }
+  &__image {
+    margin-top: 29px;
+  }
+  &__image-caption {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-dark;
+    opacity: 0.6;
+    margin-top: 20px;
+  }
+  &__decoration {
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+}

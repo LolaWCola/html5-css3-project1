@@ -1,0 +1,116 @@
+.header {
+  height: 64px;
+  width: 100%;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  @include for-big-page {
+    background-color: $color-pink;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+    display: flex;
+  }
+  &__button {
+    display: none;
+    @include for-big-page {
+      display: block;
+    }
+  }
+  &__menu-button {
+    width: 58px;
+    border: none;
+    border-left: 1px solid $border-color;
+    height: 100%;
+    background: transparent;
+    margin-left: auto;
+    @include for-big-page {
+      display: none;
+    }
+  }
+  &__menu-icon {
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+    @include for-big-page {
+      display: none;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+  @include for-big-page {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+  }
+  &__item {
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-dark;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__item_selected {
+    font-weight: 700;
+  }
+  &__arrow {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    margin-left: 11px;
+  }
+}
+
+.logo {
+  display: flex;
+  &__image {
+    width: 48px;
+    height: 48px;
+    margin-right: 13px;
+    @include for-big-page {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  &__description {
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-dark;
+    opacity: 0.6;
+    display: none;
+    @include for-big-page {
+      display: block;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.action-button {
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-color-white;
+  border-radius: 2px;
+  border: none;
+}
