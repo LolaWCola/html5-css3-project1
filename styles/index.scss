@@ -20,8 +20,11 @@
 html {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
-
+body {
+  overflow-x: hidden;
+}
 .page {
   width: 100%;
   @include for-big-page {
